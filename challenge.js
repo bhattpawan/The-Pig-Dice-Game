@@ -5,7 +5,7 @@ var prevRoll,scores,roundScore,activePlayer,gamePlaying,lastDice,finalScore;
 finalScore = document.querySelector('.final-score').value;
 
 function initialise()
-{   location.reload(); 
+{   
     scores = [0,0];
     roundScore = 0;
     activePlayer = 0;  
