@@ -21,7 +21,8 @@ function initialise()
     document.querySelector('.player-0-panel').classList.remove('winner'); 
     document.querySelector('.player-1-panel').classList.remove('active'); 
     document.querySelector('.player-1-panel').classList.remove('active'); 
-    document.querySelector('.player-0-panel').classList.add('active');
+    document.querySelector('.player-0-panel').classList.add('active');    
+    document.querySelector('.final-score').value=" ";
     finalScore = document.querySelector('.final-score').value;
     if(finalScore == '')
     {
