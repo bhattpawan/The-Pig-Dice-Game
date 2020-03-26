@@ -2,8 +2,6 @@ initialise();
 var prevRoll,scores,roundScore,activePlayer,gamePlaying,lastDice,finalScore;
 
 
-finalScore = document.querySelector('.final-score').value;
-
 function initialise()
 {  
     scores = [0,0];
@@ -24,7 +22,8 @@ function initialise()
     document.querySelector('.player-1-panel').classList.remove('active'); 
     document.querySelector('.player-1-panel').classList.remove('active'); 
     document.querySelector('.player-0-panel').classList.add('active');
-    if(finalScore === '')
+    finalScore = document.querySelector('.final-score').value;
+    if(finalScore == '')
     {
         finalScore = 100;
     }
