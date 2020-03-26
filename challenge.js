@@ -22,12 +22,9 @@ function initialise()
     document.querySelector('.player-1-panel').classList.remove('active'); 
     document.querySelector('.player-1-panel').classList.remove('active'); 
     document.querySelector('.player-0-panel').classList.add('active');    
-    document.querySelector('.final-score').placeholder="Enter Decider Here";
-    finalScore = document.querySelector('.final-score').value;
-    if(finalScore == '')
-    {
-        finalScore = 100;
-    }
+    document.querySelector('.final-score').placeholder="Score 100 points to win";     
+    document.querySelector('.final-score').disabled=true;
+    finalScore = 100;
 }
 
 function nextPlayer()
@@ -44,7 +41,6 @@ function nextPlayer()
 }
 
 document.querySelector(".btn-roll").addEventListener('click', function(){
-    document.querySelector('.final-score').style.display = 'none';
     if(gamePlaying)
     {
         //Random Number
@@ -73,8 +69,6 @@ document.querySelector(".btn-roll").addEventListener('click', function(){
 });
 
 document.querySelector('.btn-hold').addEventListener('click',function(){
-
-    document.querySelector('.final-score').style.display = 'none';
 
     if(gamePlaying)
     {
