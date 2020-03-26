@@ -1,5 +1,3 @@
-initialise();
-
 var prevRoll,scores,roundScore,activePlayer,gamePlaying,lastDice,finalScore;
 
 
